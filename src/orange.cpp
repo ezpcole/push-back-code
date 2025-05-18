@@ -1,6 +1,8 @@
 #include "orange.hpp"
 #include "vex.h"
 
+using namespace orange;
+
 orange::Drivetrain::Drivetrain(orange::gearboxType gearbox,
                                vex::motor_group left, vex::motor_group right) {
   this->left = left;
@@ -8,7 +10,8 @@ orange::Drivetrain::Drivetrain(orange::gearboxType gearbox,
   this->gearbox = gearbox;
 }
 // orange::Drivetrain::Drivetrain(orange::gearboxType gearbox,
-//                                vex::motor_group left, vex::motor_group right,
+//                                vex::motor_group left, vex::motor_group
+// right,
 //                                vex::rotation odom) {
 //   this->left = left;
 //   this->right = right;
@@ -16,7 +19,8 @@ orange::Drivetrain::Drivetrain(orange::gearboxType gearbox,
 //   this->gearbox = gearbox;
 // }
 // orange::Drivetrain::Drivetrain() {
-//   this->left = vex::motor_group(vex::motor(1), vex::motor(2), vex::motor(3));
+//   this->left = vex::motor_group(vex::motor(1), vex::motor(2),
+// vex::motor(3));
 //   this->right = vex::motor_group(vex::motor(4), vex::motor(5),
 //   vex::motor(6)); this->gearbox = orange::gearboxType::BLUE;
 // }
